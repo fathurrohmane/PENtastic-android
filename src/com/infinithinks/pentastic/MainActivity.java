@@ -30,6 +30,7 @@ public class MainActivity extends AndroidApplication implements AndroidOnlyInter
         
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.useGL20 = true;
+        cfg.useAccelerometer = true;
         
         appParamInfo.add(createParameter());
         initialize(new PENtasticMain(this), cfg);
