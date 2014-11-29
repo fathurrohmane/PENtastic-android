@@ -1,0 +1,19 @@
+
+buttonLevel.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+buttonLevelDown
+  rotate: false
+  xy: 1, 1
+  size: 168, 160
+  orig: 168, 160
+  offset: 0, 0
+  index: -1
+buttonLevelUp
+  rotate: false
+  xy: 171, 1
+  size: 168, 160
+  orig: 168, 160
+  offset: 0, 0
+  index: -1
