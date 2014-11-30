@@ -16,24 +16,27 @@ import com.infinithinks.others.AndroidOnlyInterface;
 import com.infinithinks.others.Constant;
 import com.sec.chaton.clientapi.MessageAPI;
 import com.sec.chaton.clientapi.UtilityAPI;
+import com.telkom.api.ApiEmail;
 
 public class MainActivity extends AndroidApplication implements AndroidOnlyInterface{
 	
 	private static String level;
 	private static String time;
+	public ApiEmail apiEmail;
 	
 	ArrayList<Map<String,String>> appParamInfo = new ArrayList<Map<String,String>>();
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+        apiEmail = new ApiEmail();
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.useGL20 = true;
         cfg.useAccelerometer = true;
         
         appParamInfo.add(createParameter());
         initialize(new PENtasticMain(this), cfg);
+       
     }
     
     protected Handler handler = new Handler(){
@@ -44,7 +47,9 @@ public class MainActivity extends AndroidApplication implements AndroidOnlyInter
 				
 				if(UtilityAPI.isChatONInstalled(MainActivity.this))
 				{
-					MessageAPI.sendAppLinkMessage(MainActivity.this, "Finished level "+level+" On 'Pentastic' Game With Time "+time+" . Beat me if you can!", "Pentastic", "1.2.1", appParamInfo);
+					Toast.makeText(MainActivity.this, "ChatON is not installed !!", Toast.LENGTH_SHORT).show();
+					//apiEmail.OAuth();
+					//					MessageAPI.sendAppLinkMessage(MainActivity.this, "Finished level "+level+" On 'Pentastic' Game With Time "+time+" . Beat me if you can!", "Pentastic", "1.2.1", appParamInfo);
 				}else
 				{
 					Toast.makeText(MainActivity.this, "ChatON is not installed !!", Toast.LENGTH_SHORT).show();
@@ -54,6 +59,7 @@ public class MainActivity extends AndroidApplication implements AndroidOnlyInter
 				
 				if(UtilityAPI.isChatONInstalled(MainActivity.this))
 				{
+					Toast.makeText(MainActivity.this, "ChatON is not installed !!", Toast.LENGTH_SHORT).show();
 					MessageAPI.sendAppLinkMessage(MainActivity.this, "Play 'Pentastic' now for FREE!", "Pentastic", "1.2.1", appParamInfo);
 				}else
 				{

@@ -10,5 +10,12 @@
 	<classpathentry exported="true" kind="lib" path="/PENtastic/libs/bodyeditor-loader.jar" sourcepath="/PENtastic/libs/bodyeditor-loader-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="/PENtastic/libs/tween-engine-api.jar" sourcepath="/PENtastic/libs/tween-engine-api-sources.jar"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="G:/JavaLibrary/oauth-core-20100601.jar"/>
+	<classpathentry kind="lib" path="G:/JavaLibrary/signpost-commonshttp4-1.2.1.2.jar"/>
+	<classpathentry kind="lib" path="G:/JavaLibrary/signpost-core-1.2.1.2.jar"/>
+	<classpathentry kind="lib" path="G:/JavaLibrary/commons-codec-1.2.jar/commons-codec-1.2.jar"/>
+	<classpathentry kind="lib" path="G:/JavaLibrary/httpcore-4.0.1.jar/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="G:/JavaLibrary/oauth-consumer-20100601.jar/oauth-consumer-20100601.jar"/>
+	<classpathentry kind="lib" path="G:/JavaLibrary/oauth-provider-20100601.jar/oauth-provider-20100601.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
